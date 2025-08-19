@@ -1,6 +1,7 @@
 {
-  "name": "texxasrulez/roundcube-matomo-analytics",
+  "name": "texxasrulez/matomo_analytics",
   "description": "Matomo Analytics integration plugin for Roundcube",
+    "homepage": "https://github.com/texxasrulez/matomo_analytics",
   "type": "roundcube-plugin",
   "license": "MIT",
     "version": "1.2",
