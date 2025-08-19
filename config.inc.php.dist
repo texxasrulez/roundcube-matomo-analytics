@@ -1,16 +1,15 @@
 <?php
 // Base URL to your Matomo instance (no trailing slash), e.g. https://analytics.example.com
-$config['matomo_analytics_url'] = '';
+$config['matomo_analytics_url'] = 'https://www.domain.com/matomo/';
 
 // Your Matomo Site ID (integer)
 $config['matomo_analytics_site_id'] = 0;
 
 // Respect browser Do Not Track header
-$config['matomo_analytics_respect_dnt'] = true;
+$config['matomo_analytics_respect_dnt'] = false;
 
 // If true, do not track authenticated Roundcube users (privacy-friendly)
 $config['matomo_analytics_disable_for_authenticated'] = false;
-
 
 // --- Debugging ---
 // Enable verbose logging to Roundcube logs/matomo_analytics (or custom channel below)
@@ -18,6 +17,9 @@ $config['matomo_analytics_debug_enabled'] = false;
 
 // Append an HTML comment after injection for easy view-source verification
 $config['matomo_analytics_debug_html_comments'] = false;
+
+// Log to browser console as well
+$config['matomo_analytics_debug_console'] = false;
 
 // Optional: override the log channel name (defaults to 'matomo_analytics')
 $config['matomo_analytics_debug_log_channel'] = 'matomo_analytics';
@@ -32,19 +34,6 @@ $config['matomo_analytics_domains'] = array();
 
 // Enable Matomo heartbeat timer (better time-on-page accuracy)
 $config['matomo_analytics_enable_heartbeat'] = false;
-
-// --- Debugging ---
-// Enable verbose logging to Roundcube logs/matomo_analytics (or custom channel below)
-$config['matomo_analytics_debug_enabled'] = false;
-
-// Append an HTML comment after injection for easy view-source verification
-$config['matomo_analytics_debug_html_comments'] = false;
-
-// Log to browser console as well
-$config['matomo_analytics_debug_console'] = false;
-
-// Optional: override the log channel name (defaults to 'matomo_analytics')
-$config['matomo_analytics_debug_log_channel'] = 'matomo_analytics';
 
 // --- Fallback ---
 // If true, inject a <noscript> image beacon to record pageviews even if JS is blocked
