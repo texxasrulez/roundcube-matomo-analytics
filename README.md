@@ -25,7 +25,7 @@ Older Roundcube plugins targeted **Piwik** (Matomo's former name). This plugin i
 From your Roundcube installation root:
 
 ```bash
-composer require gene/roundcube-matomo-analytics
+composer require texxasrulez/roundcube-matomo-analytics
 ```
 
 This will install the plugin into `plugins/matomo_analytics/`.
@@ -184,7 +184,7 @@ Open the Roundcube UI:
 Composer:
 
 ```bash
-composer remove gene/roundcube-matomo-analytics
+composer remove texxasrulez/roundcube-matomo-analytics
 ```
 
 Manual: delete the `plugins/matomo_analytics/` directory.
